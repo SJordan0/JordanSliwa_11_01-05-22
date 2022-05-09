@@ -1,0 +1,25 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 100%;
+}
+
+img {
+    height: 75px;
+}
+
+nav{
+    display: flex;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060;
+}
+
+h2 {
+    padding-left: 25px;
+    margin: 0;
+}
