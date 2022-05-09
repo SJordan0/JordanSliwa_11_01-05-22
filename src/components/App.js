@@ -1,11 +1,11 @@
 import Header from "./header"
-import Test from "./thumb"
+import Card from "./thumb"
 
 function app() {
   return (
     <div>
       <Header /> 
-      <Test />
+      <Card />
     </div>
   )
 }

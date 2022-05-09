@@ -1,6 +1,34 @@
 import React,{useState,useEffect} from 'react';
+import styled from 'styled-components'
 
-function Test() {
+const CardStyle = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+`
+
+const CardInfo = styled.div`
+  max-height: 340px;
+  width: 30%;
+  margin-bottom : 50px;
+  & img {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+  }
+  & p {
+    position: relative;
+    left : 15px;
+    bottom : 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+`
+
+function Card() {
   const [data,setData]=useState([]);
   const getData=()=>{
     fetch('data.json'
@@ -25,16 +53,19 @@ function Test() {
   },[])
   
   return (
-    <div className="Test">
+    <CardStyle className="Card">
      {
-       data && data.length>0 && data.map((item)=><p>{item.title}</p>)
-       
-     }
-    </div>
+       data && data.length>0 && data.map((item)=>
+       <CardInfo>
+        <img src= {item.cover} alt='' />
+        <p>{item.title}</p>
+       </CardInfo>
+       )}
+    </CardStyle>
   );
 }
 
-export default Test;
+export default Card;
 
 
 

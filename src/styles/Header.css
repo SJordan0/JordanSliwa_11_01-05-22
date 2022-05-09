@@ -3,7 +3,9 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 25px;
     max-width: 100%;
+    margin-bottom: 50px;
 }
 
 img {
@@ -15,11 +17,17 @@ nav{
     /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     color: #FF6060;
 }
 
 h2 {
-    padding-left: 25px;
+    padding: 0 12px 0 12px;
     margin: 0;
+    cursor: pointer;
+}
+
+h2:hover{
+    text-decoration-line: underline;
+    color: #FF6060;
 }
