@@ -3,28 +3,35 @@ import styled from 'styled-components'
 
 const CardStyle = styled.div`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 50px 0 50px;
 `
 
 const CardInfo = styled.div`
   max-height: 340px;
   width: 30%;
-  margin-bottom : 50px;
+  margin: 0 22px 50px 22px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition : transform 0.5s;
+  &:hover {
+    box-shadow: 2px 2px 20px grey;
+    transform: scale(1.1);
+  }
   & img {
     height: 340px;
     width: 100%;
     object-fit: cover;
+    border-radius: 15px;
   }
   & p {
     position: relative;
-    left : 15px;
-    bottom : 100px;
+    padding-left : 10px;
+    padding-right : 10px;
+    bottom : 80px;
     font-size: 24px;
     font-weight: bold;
     color: white;
+    text-shadow: 2px 1px 1px black;
   }
 `
 
@@ -53,10 +60,10 @@ function Card() {
   },[])
   
   return (
-    <CardStyle className="Card">
+    <CardStyle>
      {
        data && data.length>0 && data.map((item)=>
-       <CardInfo>
+       <CardInfo id={item.id}>
         <img src= {item.cover} alt='' />
         <p>{item.title}</p>
        </CardInfo>
@@ -66,48 +73,3 @@ function Card() {
 }
 
 export default Card;
-
-
-
-
-// function Card({ title, cover }) {
-
-//     const getData=()=>{
-//         fetch('data.json'
-//         ,{
-//           headers : { 
-//             'Content-Type': 'application/json',
-//             'Accept': 'application/json'
-//            }
-//         }
-//         )
-//           .then(function(response){
-//             console.log(response)
-//             return response.json();
-//           })
-//           .then(function(myJson) {
-//             console.log(myJson);
-//           });
-//       }
-//       useEffect(()=>{
-//         getData()
-//       },[])
-
-//       return (
-//         <div className="App">
-//          {
-//            data && data.length>0 && data.map((item)=><p>{item.about}</p>)
-//          }
-//         </div>
-//      );
-
-//     // return (
-//     //     <div>
-//     //         <img src={cover} alt=''/>
-//     //         <span>{title}</span>
-//     //     </div>
-//     // )
-// }
-
-
-// export default Card
