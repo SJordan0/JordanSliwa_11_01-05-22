@@ -17,20 +17,11 @@ const Banner = styled.header`
 
 const Nav = styled.nav`
     display: flex;
-    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 500;
     font-size: 26px; 
     & a {
         padding: 25px 12px 0 12px;
-        margin: 0;
-        cursor: pointer;
-        color: #FF6060;
-        text-decoration: none;
-        &:hover{
-            text-decoration-line: underline;
-            color: #FF6060;
-        }
     }
 `
 

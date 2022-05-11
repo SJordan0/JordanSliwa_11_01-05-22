@@ -1,4 +1,4 @@
-import Card from '../../components/thumb'
+import Card from '../../components/Thumb'
 import styled from 'styled-components'
 import logo from '../../assets/background-home.png'
 
