@@ -1,0 +1,90 @@
+.collapse {
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.bt,.btReverse {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    margin-right: 0.625rem;
+    width: 1rem;
+    height: 0.625rem;
+}
+
+.bt {
+    transform: rotateX(0);
+}
+
+.btReverse {
+    transform: rotateX(180deg);
+}
+
+.content {
+    border-radius: 0.3125rem;
+    width: 85%;
+    text-align: justify;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content li {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contentClose {
+    bottom: 1.75rem;
+}
+
+.contentClose li {
+    opacity: 0;
+    font-size: 0;
+}
+
+.contentOpen {
+    bottom: 0.1875rem;
+}
+.contentOpen li {
+    opacity: 100;
+}
+
+.collapseClose {
+    height: 1.875rem;
+}
+
+.collapseOpen {
+    height: 100%;
+}
+
+@media screen and (min-width: 62rem){
+
+.collapse .bt, .collapse .title .btReverse {
+    margin-right: 1.125rem;
+    width: 1.6875rem;
+}
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.125rem;
+}
+
+.collapseClose {
+    height: 3.3125rem;
+}
+
+.collapse .title {
+    border-radius: 0.625rem;
+    height: 3.25rem;
+    min-height: 3.25rem;
+}
+
+.collapse .contentClose {
+    bottom: 3.5625rem;
+}
+
+}

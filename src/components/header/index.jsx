@@ -22,6 +22,10 @@ const Nav = styled.nav`
     font-size: 26px; 
     & a {
         padding: 25px 12px 0 12px;
+        &:hover{
+            text-decoration-line: underline;
+            color: #FF6060;
+        }
     }
 `
 

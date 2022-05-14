@@ -1,16 +1,19 @@
 import React,{useState,useEffect} from 'react';
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
 const CardStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
+  & a {
+    width: 30%;
+    margin: 0 22px 50px 22px;
+  }
 `
 
 const CardInfo = styled.div`
   max-height: 340px;
-  width: 30%;
-  margin: 0 22px 50px 22px;
-  cursor: pointer;
+  width: 100%;
   border-radius: 15px;
   transition : transform 0.5s;
   &:hover {
@@ -63,10 +66,12 @@ function Card() {
     <CardStyle>
      {
        data && data.length>0 && data.map((item)=>
-       <CardInfo id={item.id}>
-        <img src= {item.cover} alt='' />
-        <p>{item.title}</p>
-       </CardInfo>
+       <NavLink to={`../../pages/Logement/${item.id}`}>
+        <CardInfo id={item.id}>
+          <img src= {item.cover} alt='' />
+          <p>{item.title}</p>
+        </CardInfo>
+       </NavLink>
        )}
     </CardStyle>
   );

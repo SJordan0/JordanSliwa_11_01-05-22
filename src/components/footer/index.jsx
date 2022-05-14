@@ -10,6 +10,7 @@ const FooterStyle = styled.footer`
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: 50px;
     & img {
         height: 50px;
         width: 120px;
