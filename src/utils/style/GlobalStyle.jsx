@@ -11,6 +11,15 @@ a {
   color: #FF6060;
   text-decoration: none;
 }
+
+button {
+  border: none;
+  background: none;
+}
+
+li{
+  list-style-type: none;
+}
 `
 
 function GlobalStyle() {

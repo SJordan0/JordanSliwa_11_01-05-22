@@ -9,6 +9,10 @@ const ErrorWrapper = styled.div`
     & a {
         font-size: 18px;
         padding-bottom: 50px;
+        &:hover{
+            text-decoration-line: underline;
+            color: #FF6060;
+        }
     }
 `
 

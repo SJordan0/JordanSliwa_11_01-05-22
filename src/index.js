@@ -19,14 +19,10 @@ root.render(
         <Routes>
           <Route exact path ="/" element={<Home />} />
           <Route path="/Infos" element={<Infos />} />
-          <Route path="/Logement/:item.id" element={<Logement />} />
+          <Route path="/Logement/:appartId" element={<Logement />} />
           <Route path='*' element={<Error />} />
         </Routes>
         <Footer />
     </Router>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

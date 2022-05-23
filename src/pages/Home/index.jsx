@@ -1,6 +1,6 @@
-import Card from '../../components/Thumb'
 import styled from 'styled-components'
 import logo from '../../assets/background-home.png'
+import Thumb from '../../components/Thumb'
 
 const Content = styled.div`
     padding: 0 50px 0 50px; 
@@ -32,7 +32,7 @@ function Home() {
                 <img src={logo} alt='' />
                 <p>Chez vous, partout et ailleurs</p>
             </Affiche>
-            <Card />
+            <Thumb />
         </Content>
     ) 
 }

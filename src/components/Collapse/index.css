@@ -24,16 +24,17 @@
 
 .content {
     border-radius: 0.3125rem;
-    width: 85%;
+    width: 100%;
     text-align: justify;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .content li {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .contentClose {
@@ -47,7 +48,9 @@
 
 .contentOpen {
     bottom: 0.1875rem;
+    box-sizing: border-box;
 }
+
 .contentOpen li {
     opacity: 100;
 }

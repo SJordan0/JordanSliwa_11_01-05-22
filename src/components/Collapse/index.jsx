@@ -8,6 +8,7 @@ const Liste = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 50px;
 `
 
 const Deroulant = styled.div`
@@ -16,7 +17,7 @@ const Deroulant = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    width: 85%;
+    width: 100%;
     background-color: #FF6060;    
     border-radius: 8px;
     & h3 {
@@ -43,6 +44,17 @@ const Texte = styled.div`
     border-radius: 0 0 8px 8px;
     font-size: 24px;
     color: #FF6060;
+    box-sizing: border-box;
+`
+
+const TexteListe = styled.li`
+  background-color: #F6F6F6;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  font-size: 24px;
+  color: #FF6060;
+  padding: 10px 20px;
+  box-sizing: border-box;
 `
 
 function Collapse({ title, content }) {
@@ -72,7 +84,7 @@ function Collapse({ title, content }) {
           <Texte>{content}</Texte>
         ) : (
           content.map((elm,index) => 
-          <li key={index}>{elm}</li>
+          <TexteListe key={index}>{elm}</TexteListe>
           )
         )}
       </ul>
