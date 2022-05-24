@@ -6,9 +6,10 @@ const ErrorWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     color: #FF6060;
+    width: 100%;
     & a {
         font-size: 18px;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
         &:hover{
             text-decoration-line: underline;
             color: #FF6060;
@@ -18,12 +19,21 @@ const ErrorWrapper = styled.div`
 
 const ErrorTitle = styled.h1`
     font-size: 288px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
+    @media screen and (max-width: 767px) {
+        font-size: 140px;
+        margin-bottom: 11px;
+      }
 `
 
 const ErrorMessage = styled.p`
     font-size: 36px;
-    padding-bottom: 182px;
+    margin-bottom: 133px;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        padding-bottom
+      }
 `
 
 function Error() {

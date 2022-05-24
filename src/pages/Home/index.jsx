@@ -3,7 +3,11 @@ import logo from '../../assets/background-home.png'
 import Thumb from '../../components/Thumb'
 
 const Content = styled.div`
-    padding: 0 50px 0 50px; 
+    padding: 0 50px; 
+
+    @media screen and (max-width: 767px) {
+        padding: 0 25px;
+    }
 `
 
 const Affiche = styled.div`
@@ -22,6 +26,18 @@ const Affiche = styled.div`
         bottom: 140px;
         font-size: 48px;
         color: white;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        img{
+            height: 111px;
+        }
+
+        p{
+            font-size: 24px;
+            bottom: 70px;
+        }
     }
 `
 

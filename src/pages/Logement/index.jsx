@@ -9,13 +9,23 @@ import Host from '../../components/Host'
 import Gallery from '../../components/Gallery'
 
 const Content = styled.div`
-  padding: 0 50px 0 50px; 
+  padding: 0 50px; 
+
+  @media screen and (max-width: 767px) {
+    padding: 0 25px;
+  }
 `
 
 const AppartInfos = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-top: 30px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
 `
 
 const RatesAndHost = styled.div`
@@ -24,6 +34,11 @@ const RatesAndHost = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: column-reverse;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+    flex-direction: row;
+  }
 `
 
 const Collapses = styled.div`
@@ -32,6 +47,10 @@ const Collapses = styled.div`
   justify-content: space-between;
   & div {
     width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
   }
 `
 

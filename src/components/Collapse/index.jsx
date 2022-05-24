@@ -9,6 +9,10 @@ const Liste = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 0 50px;
+
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
 `
 
 const Deroulant = styled.div`
@@ -37,7 +41,7 @@ const Button = styled.button`
     background-color: #FF6060;
 `
 
-const Texte = styled.div`
+const Texte = styled.p`
     background-color: #F6F6F6;
     width: 100%;
     padding: 20px;

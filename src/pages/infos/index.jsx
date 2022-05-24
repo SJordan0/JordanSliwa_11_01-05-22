@@ -4,7 +4,11 @@ import Collapse from '../../components/Collapse'
 
 
 const Content = styled.div`
-    padding: 0 50px 0 50px; 
+    padding: 0 50px; 
+
+    @media screen and (max-width: 767px) {
+        padding: 0 25px;
+    }
 `
 
 const Affiche = styled.div`

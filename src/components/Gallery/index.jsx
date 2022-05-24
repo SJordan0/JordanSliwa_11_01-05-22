@@ -38,6 +38,9 @@ const Compteur = styled.p`
   position: absolute;
   left: 50%;
   bottom: 20px;
+  @media screen and (max-width: 767px) {
+    display:none;
+  }
 `
 
 const Gallery = ({ appartPictures }) => {

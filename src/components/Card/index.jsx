@@ -26,6 +26,19 @@ const CardInfo = styled.div`
     color: white;
     text-shadow: 2px 1px 1px black;
   }
+
+  @media screen and (max-width: 767px) {
+
+    max-height: 255px;
+
+    img {
+      height: 255px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
 `
 
 function Card({ item }) {

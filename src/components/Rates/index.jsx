@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const Stars = styled.div`
   display: flex;
   position: relative;
-  width: max-content;
+  width: 100%;
 `
 const StarsGrey = styled.ul`
   display: flex;
@@ -22,10 +22,20 @@ const StarsRed = styled.ul`
 const StarGrey = styled.li`
   font-size: 24px;
   margin-right: 10px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    margin-right: 10px;
+  }
 `
 const StarRed = styled.li`
   font-size: 24px;
   margin-right: 10px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    margin-right: 10px;
+  }
 `
 
 function Rates({ appartRating }) {
