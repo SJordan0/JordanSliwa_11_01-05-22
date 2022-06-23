@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { getAppart } from '../../data/data'
+import { getAppart } from '../../service/data.js'
 import styled from 'styled-components'
 import Error from '../../components/Error'
 import Collapse from '../../components/Collapse'

@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import { getAllAppart } from '../../data/data'
+import { getAllAppart } from '../../service/data.js'
 import Card from "../Card";
 import styled from 'styled-components'
 
@@ -12,7 +12,7 @@ const CardStyle = styled.div`
   border-radius: 20px;
   & a {
     width: 30%;
-    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   @media screen and (max-width: 767px) {

@@ -1,4 +1,4 @@
-import datas from './data.json'
+import datas from '../data/data.json'
 
 
 function getAllAppart() {
